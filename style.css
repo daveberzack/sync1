@@ -41,7 +41,8 @@ ol, ul {
 }
 
 #all {
-	max-width:400px;
+	width:400px;
+	max-width:90%;
 	margin-top:50px;
 	display:inline-block;
 	background-color:#DDDDDD;
