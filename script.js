@@ -1,7 +1,7 @@
 var media = document.getElementById('media');
 
 $('#play').bind('click', function() {
-  $("#media").attr("src", "trip.mp3" );
+  $("#media").attr("src", "test.mp3" );
   media.currentTime = $("#start").val();
   media.play(); 
 });
