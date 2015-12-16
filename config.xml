@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+		xmlns:android = "http://schemas.android.com/apk/res/android"
+        id          = "com.daveberzack.hobnob"
+        versionCode = "10"
+        version     = "1.1.0">
+
+    <name>Groove Sync</name>
+    <description>Manually Synced Music App</description>
+    <author email="daveberzack@gmail.com" href="http://daveberzack.com">Dave Berzack</author>
+    <icon src="icon.png" />
+	<access origin="*" />
+    
+	<gap:config-file platform="android" parent="/manifest/application"> <activity android:launchMode="singleTask" /> </gap:config-file>
+	
+    <gap:platform name="android" />
+    <gap:platform name="ios" />
+
+    <preference name="android-minSdkVersion" value="14" />
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="true" />
+    <preference name="phonegap-version" value="3.6.3" />
+    <preference name="android-launchMode" value="singleTask" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="DisallowOverscroll" value="true"/>
+
+</widget>
