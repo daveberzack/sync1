@@ -1,22 +1,18 @@
 var media = document.getElementById('media');
 
-$('.track').bind('click', function() {
-  $('#play').html( $(this).html() );
-  $("#media").attr("src", $(this).attr("data-url") );
-  media.play(); 
-});
-
 $('#play').bind('click', function() {
-  console.log("play ",media)
+  $("#media").attr("src", "trip.mp3" );
   media.currentTime = $("#start").val();
   media.play(); 
 });
-
+$('#stop').bind('click', function() {
+  $("#media").attr("src", "" );
+});
 
 $('.nudge').bind('click', function() {
   media.currentTime += 1*$(this).attr("data-amount");
 });
 
 setInterval(function(){
-  $("#current").val( Math.round(media.currentTime) );
-}, 200);
+  $("#current").val( Math.round(media.currentTime*10)/10 );
+}, 100);
