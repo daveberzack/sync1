@@ -29,8 +29,13 @@ function doPlay(){
 }
 
 $('.nudge').bind('click', function() {
-  media.currentTime += 1*$(this).attr("data-amount");
+  media.currentTime += 1*$(this).attr("data-amount")+ 1*$("#calibration").val();
 });
 
 var playInterval = 0;
 
+
+$('.calibrate').bind('click', function() {
+  var cal = 1*$("#calibration").val() + 1*$(this).attr("data-amount")
+  $("#calibration").val( cal.toFixed(2) );
+});
