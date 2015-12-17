@@ -54,10 +54,15 @@ body {
 	text-align:center;
 }
 
+#track {
+	font-size:22px;
+	width:40%;
+	margin-top:20px;
+}
 #play {
 	margin-top:20px;
 	display:inline-block;
-	width:90%;	
+	width:70%;	
 }
 
 .nudge {

@@ -19,7 +19,7 @@ function doStop() {
 function doPlay(){
   isPlaying=true;
   $("#play").attr("src", "stop.png");
-  $("#media").attr("src", "test.mp3" );
+  $("#media").attr("src", $("#track").val() );
   media.currentTime = $("#current").val();
   media.play();
   
